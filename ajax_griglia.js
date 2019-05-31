@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+var source   = document.getElementById("entry-template").innerHTML;
+var template = Handlebars.compile(source);
+
+for (i = 0; i<36; i++){
+  var context = {};
+  var html = template(context);
+  $('.container').append(html)
+}
   $('.quadratino').click(function(){
   var questoquadrato = $(this);
 
@@ -8,6 +16,7 @@ $(document).ready(function(){
       'method': 'GET',
       'success': function(numeri){
         console.log(numeri.response);
+
         questoquadrato.text(numeri.response);
         if (numeri.response <=5) {
           questoquadrato.css('background-color', 'yellow');
