@@ -2,6 +2,9 @@
   margin:0;
   box-sizing: border-box;
 }
+body {
+  background-color: lightgreen;
+}
 .container {
   width:720px;
   height:720px;
@@ -13,9 +16,10 @@
 .quadratino {
   width:16.66%;
   height:16.66%;
-  border:1px solid black;
+  border:1px solid grey;
   display:flex;
   align-items: center;
   justify-content: center;
   font-size: 40px;
+  background-color: white;
 }
