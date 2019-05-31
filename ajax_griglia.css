@@ -1,16 +1,18 @@
 * {
+  margin:0;
   box-sizing: border-box;
 }
 .container {
-  width:603px;
-  height:600px;
-  border:1px solid black;
+  width:720px;
+  height:720px;
+  margin: auto;
+  margin-top: 50px;
   display:flex;
   flex-wrap: wrap;
 }
-.quadrato {
-  width:100px;
-  height:100px;
+.quadratino {
+  width:16.66%;
+  height:16.66%;
   border:1px solid black;
   display:flex;
   align-items: center;
